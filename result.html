@@ -25,13 +25,25 @@
             text-align: center;
             margin-top: 20px;
             font-size: 24px;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .result-text p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .emoji {
+            font-size: 36px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Test Results</h1>
-        <div class="result-text" id="resultText"></div>
+        <div class="result-text" id="resultText">
+            <!-- The result text will be injected here by JavaScript -->
+        </div>
     </div>
 
     <script>
@@ -40,20 +52,33 @@
         const score = parseFloat(urlParams.get('score'));
 
         let resultText = '';
+        let emoji = '';
 
         // Determine the result based on the score
-        if (score <= 25) {
-            resultText = `Your score is: ${score}% - You are very pure online!`;
+        if (score === 100) {
+            resultText = `What the f***?! You got 100%!`;
+            emoji = "😱🤯";
+            resultText += `<p>You're a true online expert! But sorry, you're definitely NOT pure anymore. The internet has taken you deep!</p>`;
+        } else if (score <= 25) {
+            resultText = `Your score is: ${score}%`;
+            emoji = "😇";
+            resultText += `<p>You are as pure as they come! You've stayed away from the dark corners of the internet. Keep that innocence while you can!</p>`;
         } else if (score <= 50) {
-            resultText = `Your score is: ${score}% - You are moderately online savvy!`;
+            resultText = `Your score is: ${score}%`;
+            emoji = "😏";
+            resultText += `<p>You're getting a little savvy, huh? You've dipped your toes into some online adventures. But hey, you're still keeping it cool!</p>`;
         } else if (score <= 75) {
-            resultText = `Your score is: ${score}% - You are a seasoned online explorer!`;
+            resultText = `Your score is: ${score}%`;
+            emoji = "🤨";
+            resultText += `<p>You’re no stranger to the internet! You've been around the block a few times, seen some things, and got some memes to show for it.</p>`;
         } else {
-            resultText = `Your score is: ${score}% - You are a true online guru!`;
+            resultText = `Your score is: ${score}%`;
+            emoji = "👑";
+            resultText += `<p>You're a true online guru! Your knowledge of the digital realm is unmatched. The internet should be afraid of you!</p>`;
         }
 
-        // Display the result
-        document.getElementById('resultText').textContent = resultText;
+        // Display the result and the emoji
+        document.getElementById('resultText').innerHTML = resultText + `<p class="emoji">${emoji}</p>`;
     </script>
 </body>
 </html>
