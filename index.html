@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Life Purity Test</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #f0a500;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        label {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+        .submit-btn {
+            background-color: #f0a500;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Life Purity Test</h1>
+        
+        <form id="quizForm">
+            <!-- Regular Questions -->
+            <div class="question">
+                <label><input type="checkbox" name="q1"> Have you ever stalked someone on social media without them knowing?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q2"> Have you ever posted something online and instantly regretted it?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q3"> Have you ever shared a meme or video that you thought was hilarious but no one else did?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q4"> Have you ever spent hours scrolling through social media without realizing it?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q5"> Have you ever slid into someone's DMs to say something random or funny?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q6"> Have you ever stayed up all night playing a game or in an online chat with friends?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q7"> Have you ever joined an online gaming community or forum just to make friends?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q8"> Have you ever spent more time customizing your character than actually playing the game?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q9"> Have you ever been in an online debate or argument that got way out of hand?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q10"> Have you ever accidentally gotten in trouble for something you said or did while gaming online?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q11"> Have you ever made an impulse purchase online that you later regretted?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q12"> Have you ever spent way too long searching for the best online deal?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q13"> Have you ever bought something online just because you got a “limited-time” offer?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q14"> Have you ever had a shopping cart full of items but chickened out before checking out?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q15"> Have you ever bought something online that you forgot about until it showed up at your door?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q16"> Have you ever tried making a viral TikTok or YouTube video and it flopped?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q17"> Have you ever made a funny post or video for your friends, and they all ignored it?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q18"> Have you ever tried to create an online persona or “brand” for yourself?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q19"> Have you ever spent too much time tweaking your online profile pictures to get it just right?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q20"> Have you ever written or shared a blog post or article online?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q21"> Have you ever made a friend online and then met them in real life?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q22"> Have you ever joined an online group chat or Discord server for a hobby or interest?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q23"> Have you ever had an awkward online interaction that you wish you could take back?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q24"> Have you ever tried to impress someone online with a witty comment or response?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q25"> Have you ever had a “facepalm” moment after sending a message or post?</label>
+            </div>
+
+            <!-- NSFW Questions -->
+            <div class="question">
+                <label><input type="checkbox" name="q26"> Have you ever Googled something NSFW out of curiosity?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q27"> Have you ever sent a flirty text or message to someone you weren't close with?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q28"> Have you ever watched adult content online?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q29"> Have you ever played a "flirty" or suggestive game online?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q30"> Have you ever sexted someone before?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q31"> Have you ever watched a "romantic" movie and gotten a little more into it than expected?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q32"> Have you ever sent a provocative photo to someone?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q33"> Have you ever flirted with someone online using emojis?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q34"> Have you ever had a phone call that started as innocent and turned into something more suggestive?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q35"> Have you ever joined a chatroom or group where the topic was flirtatious or suggestive?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q36"> Have you ever fantasized about an online acquaintance?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q37"> Have you ever laughed or been embarrassed by something inappropriate you said in an online conversation?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q38"> Have you ever been tempted to send a risky message to someone you barely know?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q39"> Have you ever received a text that made you blush or feel uncomfortable?</label>
+            </div>
+            <div class="question">
+                <label><input type="checkbox" name="q40"> Have you ever clicked on a link in an online chat, only to find out it was leading to NSFW content?</label>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="calculateScore()">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function calculateScore() {
+            const form = document.getElementById('quizForm');
+            const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+            let score = 0;
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    score++;
+                }
+            });
+
+            const percentage = (score / 40) * 100;
+
+            // Redirect to results page with score as URL parameter
+            window.location.href = `result.html?score=${percentage.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
